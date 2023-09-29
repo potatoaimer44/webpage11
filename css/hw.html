@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/9cf5d1936e.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My website</title>
+    <style>
+        *{
+            font-family: sans-serif;
+        }
+        .top{
+            background-image: url(./image/hw1.jpg);
+            height: 700px;
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .top > h1{
+            margin-left: 200px;
+            padding: 20px;
+        }
+        .navbar{
+            text-decoration: none;
+            padding: 30px;
+            margin-left: 400px;
+            padding-top: 50px;
+        }
+        .navbar > a{
+            color: #fff;
+            font-size: large;
+            padding: 15px;
+        }
+        .centre{
+            position: absolute;
+            top: 380px;
+            right: 600px;
+        }
+        .navbar > a:hover{
+            color: greenyellow;
+        }
+        .image{
+            position: absolute;
+            border: grey solid 2px;
+            height: 130px;
+            width: 130px;
+            top: 250px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: 700px;
+            border-radius: 50%;
+            background-image: url(./image/hw2.jpg);
+        }
+        .secnd{
+            position: relative;
+            border: #fff solid ;
+            height: 450px;
+            width: 100%;
+            padding-left: 350px ;
+
+        }
+        .design{
+            position: absolute;
+            left: 200px;
+        }
+        .Marketing{
+            position: absolute;
+            left: 550px;
+        }
+        .photography{
+            position: absolute;
+            left: 1000px;
+        }
+        .Branding{
+            position: absolute;
+            left: 200px;
+            top: 350px;
+        }
+        .development{
+            position: absolute;
+            left: 550px;
+            top: 350px;
+        }
+        .SEO{
+            position: absolute;
+            left: 1000px;
+            top: 350px;
+        }
+        .third{
+            background-image: url(./image/hw1.jpg);
+            height: 700px;
+            width: 100%;
+            background-repeat: no-repeat;
+            text-align: center;
+            background-blend-mode: darken;
+            padding-top:75px;
+        }
+        .left{
+            border: #fff solid 1px;
+            height: 300px;
+            width: 300px;
+            margin-left: 300px;
+            padding-top: 10px;
+            
+        }
+        .middel{
+            border: #fff solid 1px;
+            height: 300px;
+            width: 300px;
+            margin-left: 650px;
+            margin-top: -312px;
+        }
+        .right{
+            border: #fff solid 1px;
+            height: 300px;
+            width: 300px;
+            margin-left: 1000px;
+            margin-top: -300px;
+            
+        }
+        .left:hover{
+            background-color: black;
+        }
+        .right:hover{
+            background-color: black;
+        }
+        .middel:hover{
+            background-color: black;
+        }
+        .love{
+            height: 750px;
+            width: 100%;
+            text-align: center;
+        }
+        .love > .inside{
+            display: flex;
+            justify-content: center;
+        }
+        .one{
+            border: white solid 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-right: 15px;
+            border-radius: 10px;
+        }
+        .two{
+            border: white solid 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-right: 15px;
+            border-radius: 10px;
+        }
+        .three{
+            border: white solid 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            margin-right: 15px;
+            border-radius: 10px;
+        }
+        .four{
+            border: white solid 2px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 30px;
+            padding-right: 30px;
+            border-radius: 10px;
+        }
+        .one:hover{
+            background-color: green;
+        }
+        .two:hover{
+            background-color: green;
+        }
+        .three:hover{
+            background-color: green;
+        }
+        .four:hover{
+            background-color: green;
+        }
+        .topbox{
+            display: flex;
+            justify-content: center;
+
+        }
+        .box1{
+            border: white solid 1px;
+            height: 250px;
+            width: 350px;
+            margin-right: 20px;
+            border-radius: 5px;
+            background-image: url(./image/g1.jpg);
+            background-repeat: no-repeat;
+        }
+        .box2{
+            border: white solid 1px;
+            height: 250px;
+            width: 350px;
+            margin-right: 20px;
+            border-radius: 5px;
+            background-image: url(./image/g2.jpg);
+        }
+        .box3{
+            border: white solid 1px;
+            height: 250px;
+            width: 350px;
+            border-radius: 5px;
+            background-image: url(./image/g3.jpg);
+        }
+        .botbox{
+            display: flex;
+            justify-content: center;
+
+        }
+        .box4{
+            border: white solid 1px;
+            height: 250px;
+            width: 350px;
+            margin-right: 20px;
+            border-radius: 5px;
+            background-image: url(./image/g4.jpg);
+            background-repeat: no-repeat;
+        }
+        .box5{
+            border: white solid 1px;
+            height: 250px;
+            width: 350px;
+            margin-right: 20px;
+            border-radius: 5px;
+            background-image: url(./image/g5.jpg);
+        }
+        .box6{
+            border: white solid 1px;
+            height: 250px;
+            width: 350px;
+            border-radius: 5px;
+            background-image: url(./image/g6.jpg);
+        }
+        .exp{
+            margin-top: 150px;
+            height: 900px;
+            width: 100%;
+            background-image: url(./image/camera.jpg);
+        }
+        .top1{
+            padding-top: 50px;
+            display: flex;
+            justify-content: space-between;
+            margin-right: 500px;
+            margin-left: 210px;
+        }
+        .top2{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 210px;
+            margin-right: 585px;
+            margin-top: 30px;
+        }
+        #h41{
+            border: green solid 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        #h42{
+            border: green solid 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .top3{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 140px;
+            margin-right: 170px;
+            margin-top: -30px;
+        }
+        .top4{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 210px;
+            margin-right: 585px;
+            margin-top: 30px;
+        }
+        #h43{
+            border: green solid 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        #h44{
+            border: green solid 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;  
+        }
+        .top5{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 140px;
+            margin-right: 170px;
+            margin-top: -30px;
+        }
+        .top6{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 210px;
+            margin-right: 585px;
+            margin-top: 30px;
+        }
+        #h45{
+            border: green solid 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        #h46{
+            border: green solid 2px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 15px;
+            padding-right: 15px; 
+        }
+        .top7{
+            display: flex;
+            justify-content: space-between;
+            margin-left: 140px;
+            margin-right: 170px;
+            margin-top: -30px;
+        }
+        .bottom{
+            height: 700px;
+            width: 100%;
+
+        }
+        #last{
+            text-align: center;
+        }
+        .l{
+            display: flex;
+            justify-content: center;
+        }
+        .l1{
+            position: relative;
+            border: #fff solid 1px;
+            height: 300px;
+            width: 300px;
+            padding-left: 20px;
+            margin-right: 25px;
+        }
+        .l2{
+            position: relative;
+            border: #fff solid 1px;
+            height: 300px;
+            width: 300px;
+            padding-left: 20px;
+            margin-right: 25px;
+        }
+        .l3{
+            position: relative;
+            border: #fff solid 1px;
+            height: 300px;
+            width: 300px;
+            padding-left: 20px;
+        }
+        .sl1{
+            position: absolute;
+            border: #fff solid 1px;
+            background-image: url(./image/hw2.jpg);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            top: 20px;
+        }
+        .sl2{
+            position: absolute;
+            border: #fff solid 1px;
+            background-image: url(./image/3rd.jpg);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            top: 20px;
+        }
+        .sl3{
+            position: absolute;
+            border: #fff solid 1px;
+            background-image: url(./image/2nd.jpg);
+            height: 60px;
+            width: 60px;
+            border-radius: 50%;
+            top: 20px;
+        }
+        #one{
+            color: green;
+        }
+        #two{
+            color: green;
+        }
+        #three{
+            color: green;
+        }
+        .last{
+            height: 200px;
+            width: 100%;
+            background-color: gainsboro;
+        }
+        .icon{
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .f{
+            margin-right: 20px;
+        }
+        .t{
+            margin-right: 20px;
+        }
+        .i{
+            margin-right: 20px;
+        }
+        .g{
+            margin-right: 20px;
+        }
+        #lastt{
+            text-align: center;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="top">
+        <h1>My Website</h1>
+        <div class="navbar">
+            <a href="">Home</a>
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Pages</a>
+            <a href="">Contact</a>
+        </div>
+        <!-- <div class="navver">
+            <a href="">>></a>
+            <a href="">Back</a>
+            <a href="">Downloads</a>
+            <a href="">Buy</a>
+
+        </div> -->
+    </div>
+    <div class="centre">
+        <pre>
+          <h1>Hello,I'm Mark Waugh </h1>               
+              <h2>             Photographer</h2>
+        </pre>
+    </div>
+    <div class="image">
+
+    </div>
+    <div class="secnd">
+        <pre>
+            <h1>                               Welcome To My Site</h1>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;  Nulla mollis dapibus 
+                   nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.Vestibulum ante  ipsum primis 
+                       in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus nunc
+
+        </pre>
+        <div class="design">
+            Design
+        </div>
+        <div class="Marketing">
+            Marketing
+        </div>
+        <div class="photography">
+            Photography
+        </div>
+        <div class="Branding">
+            Branding
+        </div>
+        <div class="development">
+            Development
+        </div>
+        <div class="SEO">
+            SEO
+        </div>
+    </div>
+    <div class="third">
+        <div class="head">
+            <pre>
+                <h1>I'm Available For Hire</h1>
+                <h4>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus 
+                    nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</h4>
+            </pre>
+        </div>
+        <div class="left">
+            <pre>
+            <h1>Design</h1>
+            <h5>Vestibulum ante ipsum primis in 
+faucibus orci luctus et ultrices posuere 
+    cubilia Curae; Nulla mollis dapibus
+nunc</h5>
+             </pre>
+        </div>
+        <div class="middel">
+            <pre>
+            <h1>Marketing</h1>
+            <h5>Vestibulum ante ipsum primis in 
+faucibus orci luctus et ultrices posuere 
+    cubilia Curae; Nulla mollis dapibus
+nunc</h5>
+            </pre>
+        </div>
+        <div class="right">
+            <pre>
+            <h1>Photography</h1>
+            <h5>Vestibulum ante ipsum primis in 
+faucibus orci luctus et ultrices posuere 
+    cubilia Curae; Nulla mollis dapibus
+nunc
+            </h5>
+        </pre>
+        </div>
+    </div>
+    <div class="love">
+        <pre>
+            <h1>I Love What I Do</h1>
+            <h3>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus
+                 nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.</h3>
+        </pre>
+        <div class="inside">
+        <div class="one">
+            All Project
+        </div>
+        <div class="two">
+            Illustrator
+        </div>
+        <div class="three">
+            Photography
+        </div>
+        <div class="four">
+            Website
+        </div>
+        </div>
+        <br>
+        <br>
+        <div class="topbox">
+            <div class="box1">
+
+            </div>
+            <div class="box2">
+
+            </div>
+            <div class="box3">
+
+            </div>
+
+        </div>
+        <br>
+        <div class="botbox">
+            <div class="box4">
+
+            </div>
+            <div class="box5">
+
+            </div>
+            <div class="box6">
+
+            </div>
+        </div>
+    </div>
+    <div class="exp">
+        <div class="top1">
+            <h1>Experiences</h1>
+            <h1>Education</h1>
+        </div>
+        <div class="top2">
+            <div id="h41">
+                2018 - now
+            </div>
+            <div id="h42">
+                2010
+            </div>
+        </div>
+        <div class="top3">
+            <pre>
+                <h3>              Fulltime Freelancer</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+            </pre>
+            <pre>
+                <h3>              Master of Design, University of California</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+            </pre>
+        </div>
+        <div class="top4">
+            <div id="h43">
+                2014 - 2017
+            </div>
+            <div id="h44">
+                2007
+            </div>
+        </div>
+        <div class="top5">
+            <pre>
+                <h3>              Creative Director at Pixar Studio</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+
+            </pre>
+            <pre>
+                <h3>              Bachelor of Arts, Standford University</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+            </pre>
+        </div>
+        <div class="top6">
+            <div id="h45">
+                2010-2014
+            </div>
+            <div id="h46">
+                2004
+            </div>
+        </div>
+        <div class="top7">
+            <pre>
+                <h3>              Web Designer at Microsoft</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+            </pre>
+            <pre>
+                <h3>              Specialize App Design, Harvard University</h3>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem 
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+            </pre>
+        </div>
+
+    </div>
+    <div class="bottom">
+        <pre id="last">
+            <h1>What They Says</h1>
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nulla mollis dapibus 
+                nunc, ut rhoncus turpis sodales quis. Integer sit amet mattis quam.
+        </pre>
+        <br>
+        <br>
+        <div class="l">
+        <div class="l1">
+            <div class="sl1">
+                
+            </div>
+            <pre>
+
+
+                <h3 id="one">Mark Waugh</h3>Web Designer
+
+
+ "Neque porro quisquam est, qui 
+ dolorem ipsum quia dolor sit amet, 
+ consectetur, adipisci velit, sed quia 
+ non numquam eius modi tempora 
+ incidunt ut labore et dolore" 
+                
+            </pre>
+        </div>
+        <div class="l2">
+            <div class="sl2">
+
+            </div>
+            <pre>
+
+
+                <h3 id="two">Sarina Willams</h3>Graphic Designer
+
+
+"Neque porro quisquam est, qui 
+dolorem ipsum quia dolor sit amet, 
+consectetur, adipisci velit, sed quia 
+non numquam eius modi tempora 
+incidunt ut labore et dolore"
+                
+            </pre>
+        </div>
+        <div class="l3">
+            <div class="sl3">
+                
+            </div>
+            <pre>
+
+
+                <h3 id="three">Henry Nicholas</h3>Photographe
+
+"Neque porro quisquam est, qui 
+dolorem ipsum quia dolor sit amet, 
+consectetur, adipisci velit, sed quia 
+non numquam eius modi tempora 
+incidunt ut labore et dolore"
+                
+            </pre>
+        </div>
+        </div>
+
+    </div>
+    <div class="last">
+        <div class="icon">
+        <div class="f"><h2><i class="fa-brands fa-facebook"></i></h2></div>
+        <div class="t"><h2> <i class="fa-brands fa-twitter"></i></h2></div>
+        <div class="i"><h2><i class="fa-brands fa-instagram"></i></h2></div>
+        <div class="g"><h2><i class="fa-brands fa-google-plus-g"></i></h2></div>
+        <div class="l"><h2><i class="fa-brands fa-linkedin-in"></i></h2></div>
+        </div>
+        <pre id="lastt">
+                      ___________________________________________________________________________________________________________________________________________________
+
+                      © 2020 My Website. All rights reserved | Designed by W3layouts
+        </pre>
+    </div>
+</body>
+</html>
